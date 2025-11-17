@@ -63,3 +63,6 @@ target/
 
 # JetBrains
 .idea/
+
+empyrical/_version.py
+versioneer.py

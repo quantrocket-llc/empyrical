@@ -14,8 +14,7 @@
 # limitations under the License.
 # flake8: noqa
 
-from . import _version
-__version__ = _version.get_versions()['version']
+from ._version import version as __version__
 
 from .stats import (
     aggregate_returns,

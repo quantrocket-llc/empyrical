@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "setuptools>=64",
+    "wheel",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "empyrical"
+description = "Performance and risk statistics commonly used in quantitative finance."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.13"
+dynamic = ["version"]
+
+authors = [
+    { name = "Quantopian Inc." },
+    { name = "QuantRocket LLC" },
+]
+
+urls = { "homepage" = "https://github.com/quantopian/empyrical" }
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+packages = ["empyrical"]
+
+[tool.setuptools_scm]
+write_to = "empyrical/_version.py"
+version_scheme = "guess-next-dev"
+local_scheme = "dirty-tag"
+
+[tool.setuptools.package-data]
+empyrical = []
